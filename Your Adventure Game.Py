@@ -1,7 +1,7 @@
 print("In this game, you will navigate through the airport to help your character reach the correct gate to catch their plane to Berlin. Start by typing your name below, good luck!")
 
-name = input("Please type your characters name: ")
-print("Welcome", name, "to your new airport adventure! 🚀")
+characterName = input("Please type your character's name: ")
+print("Welcome", characterName, "to your new airport adventure! 🚀")
 
 
 answer = input(
@@ -55,6 +55,11 @@ elif answer == "left":
 
         elif answer.lower() == "grilled cheese":
             answer = input("Your start eating this simple but yet so flavourful cheese sandwhich. You are enjoying so much that you lose track of time. You quickly finish it cheese sandwhich and headed out the lounge to the TSA check point to enter to the departuree hall where you quickly found gate number 3 and caught the flight to Berlin! Enjoy your time visitng die Museumsinsel!")
+    
+    else:
+        print("Not a valid optiom. You missed your plane! 😢")   
 
 if answer.lower() == "decline":
         answer =  print("You turn around and headed towards the sign that says TSA check point to enter to the departuree hall where you quickly found gate number 3 and caught the flight to Berlin! Enjoy your time visitng die Museumsinsel!")
+
+print("Thank you for trying to help", characterName, "reach Berlin")
